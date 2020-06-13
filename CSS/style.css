@@ -119,7 +119,8 @@ body {
 }
 .mars-img {
   display: block;
-  width: 98.6%;
+  min-width: 260px !important;
+  max-width: 260px !important;
   min-height: 18rem;
   max-height: 18rem;
   transition: all 0.3s linear;
