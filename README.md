@@ -14,4 +14,4 @@ A web app built using reddit, github, nasa and giphy apis with features like sea
 
 ![Github](https://raw.githubusercontent.com/ankitsaxena21/APIsPanda/master/screenshots/Screenshot_2020-06-14%20APIsPanda(1).png)
 
-It's easy to use. Clone the repository and run in browser using live server.
+It's easy to use. Clone the repository, put your APIs keys at right place and run in browser using live server.
