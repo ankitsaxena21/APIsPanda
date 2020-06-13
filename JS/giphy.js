@@ -5,7 +5,7 @@ let output = ""
 class Giphy {
     async getData(search) {
         try {
-            let response = await fetch(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=JJ43JOFNdubiydqFyuWf2et6JkHR6Vvz&limit=21`);
+            let response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${search}&api_key=JJ43JOFNdubiydqFyuWf2et6JkHR6Vvz&limit=21`);
             let data = await response.json();
             return data;
         }   
