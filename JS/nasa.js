@@ -149,7 +149,7 @@ class NasaImagesAndVideos {
 class NasaAPOD {
     async getData() {
         try {
-            let response = await fetch("https://api.nasa.gov/planetary/apod?api_key="YOUR API KEY");
+            let response = await fetch("https://api.nasa.gov/planetary/apod?api_key=koRnN9J8dAsUCYwWrrZvSndMEtXEVLafb4LQTnuh");
             let data = await response.json();
             return data;
         }
@@ -181,7 +181,7 @@ class NasaAPOD {
 class MarsRover {
     async getData() {
         try {
-            let response = await fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key="YOUR API KEY");
+            let response = await fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=koRnN9J8dAsUCYwWrrZvSndMEtXEVLafb4LQTnuh");
             let data = await response.json();
             return data;
         }
