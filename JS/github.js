@@ -174,9 +174,9 @@ class UI {
       <div class="card-body">
         <h5 class="card-title">Name - ${item.name} </h5>
         <h5 class="card-title">Description - ${item.description} </h5>
-        <h5 class="card-title">Stars <i class="fas fa-star"></i>- ${item.stargazers_count} </h5>
-        <p class="card-text">Forks <i class="fas fa-code-branch"></i> - ${item.forks}</p>
-        <p class="card-text">Issues <i class="fa fa-warning"></i> - ${item.open_issues} </p>
+        <h5 class="card-title">Stars <i class="fas fa-star" style="color:yellow"></i>- ${item.stargazers_count} </h5>
+        <p class="card-text">Forks <i class="fas fa-code-branch" style="color:blue"></i> - ${item.forks}</p>
+        <p class="card-text">Issues <i class="fa fa-warning" style="color:red"></i> - ${item.open_issues} </p>
       </div>
     </div>
       `;
