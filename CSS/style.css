@@ -148,7 +148,7 @@ body {
   overflow: hidden;
 } 
 .img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   overflow: hidden;
   transition: all 1s linear;
 }
