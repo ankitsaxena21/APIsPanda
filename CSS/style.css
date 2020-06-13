@@ -179,6 +179,10 @@ body {
   .nasa-card{
     margin-left: 30px;
   }
+  .mars-img {
+    min-width: 340px !important;
+    max-width: 340px !important;
+  }
   #displayRover {
     width: 100vw;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); 
