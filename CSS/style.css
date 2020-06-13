@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Sacramento&display=swap");
+::placeholder {
+  color: gray;
+}
+body {
+  background: linear-gradient(to right, rgb(252, 177, 177), rgb(219, 152, 152));
+  color: azure !important;
+  font-family: 'Oswald', sans-serif Impact, 'Arial Narrow Bold' !important;
+  font-weight: bolder !important;
+}
+.detail {
+  background: linear-gradient(to left, rgb(163, 88, 88), rgb(219, 146, 146));
+  color: azure !important;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder !important;
+}
+.developer{
+  color: rgb(238, 210, 158);
+}
+.box {
+  display: flex;
+  justify-content: center;
+}
+.start-btn {
+  border-radius: 8% !important;
+}
+.options {
+  display: flex;
+  align-items: flex-end;
+}
+.active {
+  text-decoration: underline white;
+}
+.temp {
+  font-family: 'Sacramento', cursive;
+  text-align: center !important;
+  color: black;
+  font-size: 10vh;
+  font-weight: bold;
+}
+.temp-nasa {
+  display: flex;
+  width: 60vw;
+  font-family: 'Sacramento', cursive;
+  margin-left: 30vw;
+  color: black;
+  font-size: 10vh;
+  font-weight: bold;
+}
+.temp-git {
+  font-family: 'Sacramento', cursive;
+  text-align: center !important;
+  color: black;
+  font-size: 8vh;
+  font-weight: bold;
+}
+.card {
+  background: linear-gradient(to left, rgb(163, 88, 88), rgb(219, 146, 146));
+  border-radius: 2% ;
+}
+#sort {
+  background: linear-gradient(to right, rgb(27, 25, 25), rgb(58, 56, 56));
+  color: rgb(243, 236, 236);
+  width: 12vw;
+  height: 5vh;
+  margin-left: 35vw;
+  border: 1px solid rgb(5, 4, 4);
+}
+.img-container {
+  box-sizing: border-box;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.repo-img{
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-left: 110px;
+  margin-top: 20px;
+}
+#repoRes{
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+  grid-column-gap: 1.3rem;
+  grid-row-gap: 2.5rem;
+}
+#displayResult {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(233px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2.5rem;
+
+}
+#giphyResults {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2.5rem;
+
+}
+
+#displayRover {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column-gap: 1.3rem;
+  grid-row-gap: 1.5rem;
+}
+.mars-img {
+  display: block;
+  width: 100%;
+  min-height: 18rem;
+  max-height: 18rem;
+  transition: all 0.3s linear;
+}
+.caption {
+  background-color: rgb(161, 71, 71);
+  color: white;
+  max-width: 340px;
+}
+.img-container:hover .mars-img {
+  box-sizing: border-box;
+  opacity: 0.86;
+  overflow: hidden;
+
+}
+.giphy {
+  min-height: 370px;
+  max-height: 373px;
+  min-width: 340px;
+  max-width: 340px;
+  border: 1px solid brown;
+}
+.img {
+  position: relative;
+  overflow: hidden;
+} 
+.img:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+  transition: all 1s linear;
+}
+@media screen and (min-width: 800px) {
+  #displayResult {
+    width: 100vw;
+    margin-left: 0vw;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    grid-column-gap: 1.9rem;
+    grid-row-gap: 2.2rem;
+  }
+  #giphyResults {
+    width: 100vw;
+    margin-left: 0vw;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-column-gap: 1.4rem;
+    grid-row-gap: 2.2rem;
+  }
+  #repoRes{
+    width: 96vw;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 2.5rem;
+  }
+  #displayApod {
+    margin-left: 10vw;
+  }
+  .nasa-card{
+    margin-left: 30px;
+  }
+  #displayRover {
+    width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); 
+    grid-column-gap: 0rem;
+    grid-row-gap: 0.5rem;
+  }
+  #search-input{
+    width: 55vw !important;
+  }
+}
+@media screen and (max-width: 658px) {
+ #sort {
+    width: 32vw;
+    height: 7vh;
+    margin-left: 27vw;
+  }
+  #repoRes{
+    margin-left: 0em;
+  }
+  .caption {
+    max-width: 260px;
+  }
+  .repo-img{
+    margin-left: 77px;
+  }
+  .giphy {
+    min-height: 200px !important;
+    max-height: 200px !important;
+    min-width: 230px !important ;
+    max-width: 230px !important;
+  }
+  .giph-card{
+    min-height: 200px !important;
+    min-width: 240px !important ;
+    max-width: 260px !important;
+  }
+  .temp-nasa {
+    width: 80vw;
+    font-family: 'Sacramento', cursive;
+    color: black;
+    font-size: 6vh;
+    margin-left: 0em;
+    font-weight: bold;
+  }
+  .search-form {
+    margin-left: 0px;
+  }
+  .nasa-btn{
+    height: 36px;
+    width: 57px;
+    font-size: 11px !important;
+    margin-right: 10px;
+  }
+  .mars-img {
+    min-height: 14rem;
+  }
+}
+#road{
+  margin-left: 25px;
+  width: 160px;
+	border-bottom:4px dashed rgb(4, 100, 36);
+}
+
+#panda{
+	background:url("../panda.gif");
+	width:200px;
+  height:200px;
+  border: 3px solid black;
+  border-radius: 50%;
+	}
