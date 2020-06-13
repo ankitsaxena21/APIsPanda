@@ -48,7 +48,7 @@ searchForm.addEventListener('submit', e => {
 
 async function search(searchTerm, searchLimit, sortBy) {
   return fetch(
-    `http://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${searchLimit}`
+    `https://www.reddit.com/search.json?q=${searchTerm}&sort=${sortBy}&limit=${searchLimit}`
   )
     .then(res => res.json())
     .then(data => {
